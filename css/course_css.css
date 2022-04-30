@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+img{
+	border: 3px solid black;
+	border-radius: 25%;
+	width: 100%;
+	margin: 20px;
+  }
+
+
+
+.row {
+	display: flex;
+  }
+  
+.column {
+	flex: 33.33%;
+	padding: 5px;
+  }

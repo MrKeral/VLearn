@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive_css.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+.column {
+  font-family: 'Ubuntu', sans-serif;
+  float: left;
+  width: 35%;
+  padding: 15%;
+  margin: 80px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.new {
+  /*background-color: lightgrey;*/
+  width: 300px;
+  padding: 70px;  
+}
+
+.green{
+  border: 8px solid rgb(0, 128, 0);
+}
+
+.orange{
+  border: 8px solid rgb(235, 135, 14);
+}
+
+.red{
+  border: 8px solid rgb(232, 7, 7)
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.3) url(bg1.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.row:after {
+  display: flex;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+</style>
+</head>
+<body>
+  <nav class="navbar colour h-nav-resp">
+    <ul class="nav-list v-class-resp">
+        <div class="logo"><img src="logo.jpeg" alt="logo"></div>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#connect">Connect us</a></li>
+    </ul>
+    <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+</nav>
+
+<section class="background">
+<div class="row">
+    <div class="new column green" style="background-color:rgba(33, 70, 181, 0.73);">
+      <h2>Linux 1</h2>
+    </div>
+    <div class="new column green" style="background-color:rgba(33, 70, 181, 0.73);">
+      <h2>Linux 2</h2>
+    </div>
+</div>
+
+<div class="row">
+  <div class="new column orange" style="background-color:rgba(33, 70, 181,0.73);">
+    <h2>Network-1</h2>
+  </div>
+  <div class="new column orange" style="background-color:rgba(33, 70, 181,0.73);">
+    <h2>Network-1</h2>
+  </div>
+</div>
+
+<div class="row">
+  <div class="new column red" style="background-color:rgba(33, 70, 181,0.73);">
+    <h2>Cyber Introduction 1</h2>
+  </div>
+  <div class="new column red" style="background-color:rgba(33, 70, 181, 0.73);">
+    <h2>Nmap</h2>
+  </div>
+</div>
+</section>
+
+</body>
+</html>
